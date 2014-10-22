@@ -1,0 +1,24 @@
+{
+  "name": "cw-validation-form",
+  "version": "0.0.0",
+  "description": "cw-validation-form",
+  "main": "index.js",
+  "author": {
+    "name": "catwalkagogo",
+    "email": ""
+  },
+  "dependencies": {
+    "cw-core": "*",
+    "cw-validation": "*",
+    "cw-dom": "*",
+    "linq": "^3.0.4-beta",
+    "underscore": "^1.6.0"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-copy": "^0.5.0",
+    "grunt-contrib-uglify": "^0.4.0",
+    "grunt-ts": "^1.11.2",
+    "grunt-typescript-export": "^0.1.0"
+  }
+}

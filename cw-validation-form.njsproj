@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <Name>cw-form</Name>
+    <RootNamespace>cw-form</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>c7d7d9fc-9243-4c0f-915c-f0c659d87a07</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>app.js</StartupFile>
+    <StartWebBrowser>False</StartWebBrowser>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+    <ProjectView>ShowAllFiles</ProjectView>
+    <TypeScriptSourceMap>true</TypeScriptSourceMap>
+    <TypeScriptModuleKind>CommonJS</TypeScriptModuleKind>
+    <EnableTypeScript>true</EnableTypeScript>
+    <StartWebBrowser>false</StartWebBrowser>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="cw-valifation-form.d.ts" />
+    <Content Include="package.json" />
+    <Content Include="README.md" />
+    <Content Include="ts\lib\Field.ts" />
+    <Content Include="ts\lib\field\CheckBoxField.ts" />
+    <Content Include="ts\lib\field\CheckBoxOption.ts" />
+    <Content Include="ts\lib\field\RadioField.ts" />
+    <Content Include="ts\lib\field\RadioOption.ts" />
+    <Content Include="ts\lib\field\SelectField.ts" />
+    <Content Include="ts\lib\field\SelectOption.ts" />
+    <Content Include="ts\lib\field\TextAreaField.ts" />
+    <Content Include="ts\lib\field\TextField.ts" />
+    <TypeScriptCompile Include="ts\lib\ChoiceField.ts" />
+    <TypeScriptCompile Include="ts\lib\ChoiceOption.ts" />
+    <TypeScriptCompile Include="ts\lib\Form.ts" />
+    <TypeScriptCompile Include="ts\lib\IField.ts" />
+    <TypeScriptCompile Include="ts\lib\InputField.ts" />
+    <TypeScriptCompile Include="ts\lib\presenters\Radio.ts" />
+    <TypeScriptCompile Include="ts\lib\presenters\IPresenter.ts" />
+    <TypeScriptCompile Include="ts\lib\presenters\Presenter.ts" />
+    <TypeScriptCompile Include="ts\lib\presenters\CheckBox.ts" />
+    <TypeScriptCompile Include="ts\lib\presenters\TextArea.ts" />
+    <TypeScriptCompile Include="ts\lib\presenters\Select.ts" />
+    <TypeScriptCompile Include="ts\lib\presenters\TextInput.ts" />
+    <TypeScriptCompile Include="ts\typings\cw-dom\cw-dom.d.ts" />
+    <TypeScriptCompile Include="ts\typings\cw-core\cw-core.d.ts" />
+    <TypeScriptCompile Include="ts\typings\cw-validation\cw-validation.d.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Gruntfile.js" />
+    <Compile Include="index.js" />
+    <Compile Include="lib\Field.js" />
+    <Compile Include="lib\field\CheckBoxField.js" />
+    <Compile Include="lib\field\CheckBoxOption.js" />
+    <Compile Include="lib\field\ChoiceField.js" />
+    <Compile Include="lib\field\ChoiceOption.js" />
+    <Compile Include="lib\field\RadioField.js" />
+    <Compile Include="lib\field\RadioOption.js" />
+    <Compile Include="lib\field\SelectField.js" />
+    <Compile Include="lib\field\SelectOption.js" />
+    <Compile Include="lib\field\TextAreaField.js" />
+    <Compile Include="lib\field\TextField.js" />
+    <Compile Include="lib\Form.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="lib\" />
+    <Folder Include="lib\field\" />
+    <Folder Include="ts\" />
+    <Folder Include="ts\lib\" />
+    <Folder Include="ts\lib\field\" />
+    <Folder Include="ts\lib\presenters\" />
+    <Folder Include="ts\typings\" />
+    <Folder Include="ts\typings\linq\" />
+    <Folder Include="ts\typings\cw-validation\" />
+    <Folder Include="ts\typings\cw-core\" />
+    <Folder Include="ts\typings\cw-dom\" />
+    <Folder Include="ts\typings\underscore\" />
+    <Folder Include="ts\typings\validator\" />
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="ts\index.ts" />
+    <TypeScriptCompile Include="ts\typings\linq\linq.d.ts" />
+    <TypeScriptCompile Include="ts\typings\underscore\underscore.d.ts" />
+    <TypeScriptCompile Include="ts\typings\validator\validator.d.ts" />
+  </ItemGroup>
+  <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsTools.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:48022/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost:1337</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
